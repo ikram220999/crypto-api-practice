@@ -35,14 +35,14 @@ const ListCrypto = () => {
   }, []);
 
   return (
-    <Container fluid className="p-5 cont">
+    <Container fluid className="p-3 cont">
       <h1 className="h3 mb-5">All Crypto </h1>
 
                   {crypto.map((cry, index) => {
                     return (
-                      <div className="wrapper-crypto mb-3 p-4 border">
+                      <div className="wrapper-crypto w-100 mb-3 p-4 border">
                         <div className="d-flex align-items-center justify-content-between">
-                          <div className="d-flex flex-row align-items-center w-75">
+                          <div className="d-flex flex-row align-items-center w-100">
                             <img src={cry.image} width="30" className=""></img>
                             <span>&nbsp;&nbsp; &nbsp;&nbsp;</span>
                             <h6 className="w-50 p-0 m-0 mr-3" color="grey">{cry.name}</h6>
